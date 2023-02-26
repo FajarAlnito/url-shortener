@@ -1,0 +1,9 @@
+{
+  "scss.validate": false,
+  "scss.customData": [
+    ".nvim/cssls-custom-data.json"
+  ],
+  "css.customData": [
+    ".nvim/cssls-custom-data.json"
+  ]
+}
