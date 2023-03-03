@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      sans: ['Public Sans', ...defaultTheme.fontFamily.sans]
+      sans: ['Public Sans', ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],
