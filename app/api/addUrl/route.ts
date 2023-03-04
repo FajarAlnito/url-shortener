@@ -9,9 +9,12 @@ export interface AddUrlResponse {
   shortened_url: string
 }
 
+export interface AddUrlRequest {
+  link: string
+}
+
 export async function POST(request: Request) {
-  console.log(process.env.API_URL)
-  const { link } = await request.json()
+  const { link }: AddUrlRequest = await request.json()
   const res = await fetch(`${process.env.API_URL}/add-url`, {
     headers: {
       'Content-Type': 'application/json',
