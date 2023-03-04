@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server'
 
+export interface AddUrlRequest {
+  link: string
+}
+
 export interface AddUrlResponse {
   ID: number
   CreatedAt: Date
@@ -7,10 +11,6 @@ export interface AddUrlResponse {
   DeletedAt: Date | null
   url: string
   shortened_url: string
-}
-
-export interface AddUrlRequest {
-  link: string
 }
 
 export async function POST(request: Request) {
