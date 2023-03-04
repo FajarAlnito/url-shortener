@@ -1,0 +1,8 @@
+services:
+  production:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports: 
+      - ${APP_PORT:-3000}:80
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
