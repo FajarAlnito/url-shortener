@@ -1,9 +1,11 @@
 import '@/styles/globals.css'
+import Providers from './providers'
 
 export const metadata = {
   title: 'Goner URL Shortener',
   description: 'URL Shortener',
 }
+
 export default function RootLayout({
   children,
 }: {
@@ -11,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head />
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
